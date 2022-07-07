@@ -1,4 +1,5 @@
 using ElevenNote.Data;
+using ElevenNote.Services.User;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 // ApplicationDbContext exists in ElevenNote.Data, so a namespace is required to access the class
 // UseSqlServer() also requires a using statement, Microsoft.EntityFrameworkCore
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+
+//Add User Service/Interface for Dependency Injection here
+builder.Services.AddScoped<IUserService, UserService>();
 
 // Add services to the container.
 
