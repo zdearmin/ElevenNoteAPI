@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.WebAPI", "ElevenNote.WebAPI.csproj", "{E977D82C-23A2-459A-AA80-0C7894469C10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Data", "ElevenNote.Data\ElevenNote.Data.csproj", "{9F70C83C-7BC9-4506-B2DB-920DF8FA19C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Models", "ElevenNote.Models\ElevenNote.Models.csproj", "{5370C359-BF8B-432C-A543-7255E804CC77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Services", "ElevenNote.Services\ElevenNote.Services.csproj", "{C2C7CD14-996D-4507-ADD6-FF9001C333C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{E977D82C-23A2-459A-AA80-0C7894469C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E977D82C-23A2-459A-AA80-0C7894469C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E977D82C-23A2-459A-AA80-0C7894469C10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F70C83C-7BC9-4506-B2DB-920DF8FA19C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F70C83C-7BC9-4506-B2DB-920DF8FA19C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F70C83C-7BC9-4506-B2DB-920DF8FA19C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F70C83C-7BC9-4506-B2DB-920DF8FA19C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5370C359-BF8B-432C-A543-7255E804CC77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5370C359-BF8B-432C-A543-7255E804CC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5370C359-BF8B-432C-A543-7255E804CC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5370C359-BF8B-432C-A543-7255E804CC77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C7CD14-996D-4507-ADD6-FF9001C333C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C7CD14-996D-4507-ADD6-FF9001C333C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C7CD14-996D-4507-ADD6-FF9001C333C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C7CD14-996D-4507-ADD6-FF9001C333C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
