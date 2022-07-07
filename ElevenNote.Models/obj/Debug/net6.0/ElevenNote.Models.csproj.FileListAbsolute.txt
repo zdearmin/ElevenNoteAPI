@@ -10,3 +10,5 @@ D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\Eleve
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Models\obj\Debug\net6.0\refint\ElevenNote.Models.dll
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Models\obj\Debug\net6.0\ElevenNote.Models.pdb
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Models\obj\Debug\net6.0\ref\ElevenNote.Models.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Models\bin\Debug\net6.0\ElevenNote.Models.runtimeconfig.json
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Models\obj\Debug\net6.0\ElevenNote.Models.genruntimeconfig.cache
