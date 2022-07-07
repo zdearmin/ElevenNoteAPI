@@ -1,0 +1,17 @@
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\bin\Debug\net6.0\ElevenNote.Services.deps.json
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\bin\Debug\net6.0\ElevenNote.Services.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\bin\Debug\net6.0\ElevenNote.Services.pdb
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\bin\Debug\net6.0\ElevenNote.Data.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\bin\Debug\net6.0\ElevenNote.Models.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\bin\Debug\net6.0\ElevenNote.Data.pdb
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\bin\Debug\net6.0\ElevenNote.Models.pdb
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ElevenNote.Services.csproj.AssemblyReference.cache
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ElevenNote.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ElevenNote.Services.AssemblyInfoInputs.cache
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ElevenNote.Services.AssemblyInfo.cs
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ElevenNote.Services.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ElevenNote.Services.csproj.CopyComplete
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ElevenNote.Services.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\refint\ElevenNote.Services.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ElevenNote.Services.pdb
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Services\obj\Debug\net6.0\ref\ElevenNote.Services.dll
