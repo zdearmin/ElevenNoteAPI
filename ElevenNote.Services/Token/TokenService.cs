@@ -24,7 +24,9 @@ namespace ElevenNote.Services.Token
         {
             var userEntity = await GetValidUserAsync(model);
             if (userEntity is null)
+            {
                 return null;
+            }
 
             return GenerateToken(userEntity);
         }
@@ -39,7 +41,9 @@ namespace ElevenNote.Services.Token
 
             var verifyPasswordResult = passwordHasher.VerifyHashedPassword(userEntity, userEntity.Password, model.Password);
             if (verifyPasswordResult == PasswordVerificationResult.Failed)
+            {
                 return null;
+            }
 
             return userEntity;
         }

@@ -44,8 +44,10 @@ namespace ElevenNote.Services.User
         {
             var entity = await _context.Users.FindAsync(userId);
             if (entity is null)
+            {
                 return null;
-
+            }
+            
             var userDetail = new UserDetail
             {
                 Id = entity.Id,
