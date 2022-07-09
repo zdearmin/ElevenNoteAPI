@@ -7,6 +7,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+// using Microsoft.IdentityModel;
+// using System.IdentityModel.Tokens;
 
 namespace ElevenNote.Services.Token
 {
@@ -20,7 +24,7 @@ namespace ElevenNote.Services.Token
             _configuration = configuration;
         }
 
-        public async Task<TokenResponse> GetTokenAsync(TokenResponse model) 
+        public async Task<TokenResponse> GetTokenAsync(TokenRequest model) 
         {
             var userEntity = await GetValidUserAsync(model);
             if (userEntity is null)
@@ -48,7 +52,7 @@ namespace ElevenNote.Services.Token
             return userEntity;
         }
 
-        private TokenRequest GenerateToken(UserEntity entity) 
+        private TokenResponse GenerateToken(UserEntity entity) 
         {
             var claims = GetClaims(entity);
 
