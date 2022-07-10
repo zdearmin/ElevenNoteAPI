@@ -3,6 +3,7 @@ using System.Text;
 using ElevenNote.Data;
 using ElevenNote.Services.User;
 using ElevenNote.Services.Token;
+using ElevenNote.Services.Note;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -16,10 +17,14 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 // UseSqlServer() also requires a using statement, Microsoft.EntityFrameworkCore
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
+builder.Services.AddHttpContextAccessor();
+
 //Add User Service/Interface for Dependency Injection here
 builder.Services.AddScoped<IUserService, UserService>();
 // Add Token Service/Interface for Dependency Injection here
 builder.Services.AddScoped<ITokenService, TokenService>();
+// Add Note Service/Interface for Dependency Injections here
+builder.Services.AddScoped<INoteService, NoteService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
