@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
 using ElevenNote.Data;
+using ElevenNote.Data.Entities;
 using ElevenNote.Models.Note;
 
 namespace ElevenNote.Services.Note
@@ -32,7 +33,7 @@ namespace ElevenNote.Services.Note
             var noteEntity = new NoteEntity
             {
                 Title = request.Title,
-                ContentDisposition = request.Content,
+                Content = request.Content,
                 CreatedUtc = DateTimeOffset.Now,
                 OwnerId = _userId
             };
@@ -56,6 +57,23 @@ namespace ElevenNote.Services.Note
             .ToListAsync();
 
             return notes;
+        }
+
+        public async Task<NoteDetail> GetNoteByIdAsync(int noteId)
+        {
+            // Find the first note that has the given Id and an OwnerId that matches the requesting userId
+            var noteEntity = await _dbContext.Notes
+            .FirstOrDefaultAsync(e => e.Id == noteId && e.OwnerId == _userId);
+
+            // If noteEntity is null then return null, otherwise initialize and return a new NoteDetail
+            return noteEntity is null ? null : new NoteDetail
+            {
+                Id = noteEntity.Id,
+                Title = noteEntity.Title,
+                Content = noteEntity.Content,
+                CreatedUtc = noteEntity.CreatedUtc,
+                ModifiedUtc = noteEntity.ModifiedUtc
+            };
         }
     }
 }
