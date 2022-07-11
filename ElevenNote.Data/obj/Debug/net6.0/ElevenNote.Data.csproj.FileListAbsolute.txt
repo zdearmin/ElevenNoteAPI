@@ -1,4 +1,5 @@
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\bin\Debug\net6.0\ElevenNote.Data.deps.json
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\bin\Debug\net6.0\ElevenNote.Data.runtimeconfig.json
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\bin\Debug\net6.0\ElevenNote.Data.dll
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\bin\Debug\net6.0\ElevenNote.Data.pdb
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\obj\Debug\net6.0\ElevenNote.Data.csproj.AssemblyReference.cache
@@ -9,6 +10,5 @@ D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\Eleve
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\obj\Debug\net6.0\ElevenNote.Data.dll
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\obj\Debug\net6.0\refint\ElevenNote.Data.dll
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\obj\Debug\net6.0\ElevenNote.Data.pdb
-D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\obj\Debug\net6.0\ref\ElevenNote.Data.dll
-D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\bin\Debug\net6.0\ElevenNote.Data.runtimeconfig.json
 D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\obj\Debug\net6.0\ElevenNote.Data.genruntimeconfig.cache
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\APIs\ElevenNoteAPI\ElevenNote.Data\obj\Debug\net6.0\ref\ElevenNote.Data.dll

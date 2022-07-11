@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ElevenNote.Data.Entities
@@ -17,5 +18,6 @@ namespace ElevenNote.Data.Entities
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
+        public List<CategoryEntity> Categories { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace ElevenNote.Data
         public DbSet<UserEntity> Users { get; set; }
 
         public DbSet<NoteEntity> Notes { get; set; }
+        public DbSet<CategoryEntity> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +21,11 @@ namespace ElevenNote.Data
             .HasOne(n => n.Owner)
             .WithMany(p => p.Notes)
             .HasForeignKey(n => n.OwnerId);
+
+            modelBuilder.Entity<CategoryEntity>()
+            .HasOne(n => n.Note)
+            .WithMany(p => p.Categories)
+            .HasForeignKey(n => n.NoteId);
         }
     }
 }
