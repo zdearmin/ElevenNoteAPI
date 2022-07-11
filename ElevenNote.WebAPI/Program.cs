@@ -26,6 +26,8 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 // Add Note Service/Interface for Dependency Injections here
 builder.Services.AddScoped<INoteService, NoteService>();
+// Add Category Service/Interface for Dependency Injections here
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
