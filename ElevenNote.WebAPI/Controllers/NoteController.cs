@@ -20,6 +20,22 @@ namespace ElevenNote.WebAPI.Controllers
             _noteService = noteService;
         }
 
+        // POST api/Note
+        [HttpPost]
+        public async Task<IActionResult> CreateNote([FromBody] NoteCreate request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadReques(ModelState);
+            }
+            if (await _noteService.CreateNoteAsync(request))
+            {
+                return Ok("Note created successfully.");
+            }
+            return BadRequest("Note could not be created.");
+
+        }
+
         // GET api/Note
         [HttpGet]
         public async Task<IActionResult> GetAllNotes()
