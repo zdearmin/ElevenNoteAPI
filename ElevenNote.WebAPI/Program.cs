@@ -4,6 +4,7 @@ using ElevenNote.Data;
 using ElevenNote.Services.User;
 using ElevenNote.Services.Token;
 using ElevenNote.Services.Note;
+using ElevenNote.Models.Maps;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -39,6 +40,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
 });
+
+builder.Services.AddAutoMapper(typeof(NoteMapProfile));
 
 // Add services to the container.
 builder.Services.AddControllers();

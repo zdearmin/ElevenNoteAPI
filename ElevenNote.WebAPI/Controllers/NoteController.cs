@@ -39,14 +39,16 @@ namespace ElevenNote.WebAPI.Controllers
 
         // GET api/Note
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<NoteListItem>),200)]
         public async Task<IActionResult> GetAllNotes()
         {
             var notes = await _noteService.GetAllNotesAsync();
             return Ok(notes);
         }
 
-        // GET api/Note/1
+        // GET api/Note/{Id}
         [HttpGet("{noteId:int}")]
+        [ProducesResponseType(typeof(IEnumerable<NoteDetail>),200)]
         public async Task<IActionResult> GetNoteById([FromRoute] int noteId)
         {
             var detail = await _noteService.GetNoteByIdAsync(noteId);
@@ -59,7 +61,7 @@ namespace ElevenNote.WebAPI.Controllers
 
         // PUT api/Note
         [HttpPut]
-        public async Task<IActionResutl> UpdateNoteById([FromBody] NoteUpdate request)
+        public async Task<IActionResult> UpdateNoteById([FromBody] NoteUpdate request)
         {
             if (!ModelState.IsValid)
             {
@@ -68,6 +70,12 @@ namespace ElevenNote.WebAPI.Controllers
 
             return await _noteService.UpdateNoteAsync(request) ? Ok("Note updated successfully.") : BadRequest("Note could not be updated.");
         }
-    }
 
+        // DELETE api/Note/{Id}
+        [HttpDelete("{noteId:int}")]
+        public async Task<IActionResult> DeleteNote([FromRoute] int noteId)
+        {
+            return await _noteService.DeleteNoteAsync(noteId) ? Ok($"Note {noteId} was deleted successfully.") : BadRequest($"Note {noteId} could not be deleted.");
+        }
+    }
 }
