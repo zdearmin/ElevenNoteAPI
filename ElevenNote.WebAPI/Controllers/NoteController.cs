@@ -56,6 +56,18 @@ namespace ElevenNote.WebAPI.Controllers
             // Otherwise return a NotFound() 404 response
             return detail is not null ? Ok(detail) : NotFound();
         }
+
+        // PUT api/Note
+        [HttpPut]
+        public async Task<IActionResutl> UpdateNoteById([FromBody] NoteUpdate request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            return await _noteService.UpdateNoteAsync(request) ? Ok("Note updated successfully.") : BadRequest("Note could not be updated.");
+        }
     }
 
 }
